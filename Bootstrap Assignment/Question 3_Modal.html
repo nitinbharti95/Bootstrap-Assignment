@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modaltrigger">
+        Login to Website
+    </button>
+    <div class="modal fade" id="modaltrigger">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close btn-dark btn-outline-danger"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">User name</label>
+                            <input type="email" class="form-control" id="username" placeholder="Enter Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        </div>
+                        <div class="modal-footer">
+                            <h6 class="col align-self-start"><a class="modal-link active" href="#">Forget Password</a>
+                            </h6>
+                            <button type="button" class="btn-danger" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn-primary">Login</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

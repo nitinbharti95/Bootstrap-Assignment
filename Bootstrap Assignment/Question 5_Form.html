@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .input-color {
+            background: #F2F2F2;
+            color: #BEB5AD;
+        }
+
+        .form-container {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .box0 {
+            width: 60%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;   
+        }
+
+        .box1 {
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+        }
+        .footer {
+            display:flex;
+            position:flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-5 form-container box0 bg-primary">
+            <div class="box1 w-50">
+                <form>
+                    <div class="form-header">
+                        <h2 class="form-title">Sign Up</h2>
+                        <p class="form-text">Please fill in this form to create an account!</p>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control border-0 input-color" placeholder="First Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control border-0 input-color" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <input type="email" class="form-control mb-3 mt-3 border-0 input-color" placeholder="Email">
+                    <input type="password" class="form-control mb-3 border-0 input-color" placeholder="Password">
+                    <input type="password" class="form-control mb-3 border-0 input-color"
+                        placeholder="Confirm Password">
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="chechbox1">
+                        <label class="form-check-label" for="checkbox1">I accept the <a href="#"
+                                class="text-decoration-none">Terms of Use</a> & <a href="#"
+                                class="text-decoration-none">Privacy
+                                Policy</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3 px-5">Sign Up</button>
+                </form>
+                
+            </div>
+            <p class="form-text text-white">Already have an account? <a class="text-white" href="#">Login here.</a></p> 
+    </div>
+    
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
